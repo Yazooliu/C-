@@ -46,3 +46,18 @@ void main()
   
   getchar();
 }
+
+def CheckHave(inputs,listoftoken):
+    '''
+    inputs:      inputs string 
+    listoftoken: list of token 
+    puprose    : This functon is used to check if inputs-string have any char in listoftoken; 
+                 if have reture True; if don't have return False
+    '''
+    Haveornot = False
+    for i in range(len(inputs)):
+        for j in range(len(listoftoken)):
+            if listoftoken[j] == inputs[i]:
+                Haveornot = True
+     
+    return Haveornot
